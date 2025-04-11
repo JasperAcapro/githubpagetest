@@ -1,1 +1,150 @@
-<h1>Github pages test</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universo Anime</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #e91e63;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #e91e63;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2a2a2a;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e91e63;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      font-size: 2em;
+      border-bottom: 2px solid #e91e63;
+      margin-bottom: 10px;
+    }
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .anime-card {
+      background-color: #1f1f1f;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+    .anime-card img {
+      width: 100%;
+      height: auto;
+    }
+    .anime-card h3 {
+      padding: 10px;
+      font-size: 1.2em;
+    }
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 3px solid #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Universo Anime</h1>
+    <p>Noticias, recomendaciones, estrenos y más del mundo del anime</p>
+  </header>
+  <nav>
+    <a href="#noticias">Noticias</a>
+    <a href="#estrenos">Estrenos</a>
+    <a href="#recomendaciones">Recomendaciones</a>
+    <a href="#clasicos">Clásicos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section id="noticias">
+      <h2>Últimas Noticias</h2>
+      <p>¡Attack on Titan finalizó! Mira lo que opina la crítica sobre su épico cierre...</p>
+    </section>
+
+    <section id="estrenos">
+      <h2>Estrenos de Temporada</h2>
+      <div class="anime-grid">
+        <div class="anime-card">
+          <img src="gif.gif" alt="Anime 1">
+          <h3>Kimetsu no Yaiba: Nueva Temporada</h3>
+        </div>
+        <div class="anime-card">
+          <img src="https://placehold.co/300x400?text=Anime+2" alt="Anime 2">
+          <h3>Jujutsu Kaisen: Temporada 2</h3>
+        </div>
+        <div class="anime-card">
+          <img src="https://placehold.co/300x400?text=Anime+3" alt="Anime 3">
+          <h3>Solo Leveling</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="recomendaciones">
+      <h2>Recomendaciones</h2>
+      <ul>
+        <li>Fullmetal Alchemist: Brotherhood - Una obra maestra completa.</li>
+        <li>Death Note - Intriga psicológica con personajes icónicos.</li>
+        <li>Steins;Gate - Ciencia ficción con viajes en el tiempo.</li>
+      </ul>
+    </section>
+
+    <section id="clasicos">
+      <h2>Clásicos del Anime</h2>
+      <p>Dragon Ball, Naruto, One Piece, y más animes que marcaron generaciones.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes sugerencias? Escríbenos a <a href="mailto:contacto@universoanime.com">contacto@universoanime.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Universo Anime. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
